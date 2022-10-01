@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<h1>Bitcoin Price</h1>
+
+<form action="/bitcoin-price" method="POST">
+    <label for="cur">Bitcoin currency: </label>
+    <input type="text" name="cur"><br><br>
+    <button>Get latest price</button>
+</form>
+
+<p>{{ result }}</p>
+
+{% endblock %}

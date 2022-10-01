@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<h1>Currency Symbol</h1>
+
+<form action="/currency-symbol" method="POST">
+    <label for="cur">Currency name: </label>
+    <input type="text" name="cur"><br><br>
+    <button>Get currency symbol</button>
+</form>
+
+<p>{{ result }}</p>
+
+{% endblock %}

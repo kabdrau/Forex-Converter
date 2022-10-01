@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<h1>Currency Converter</h1>
+
+<form action="/currency-rate" method="POST">
+    <label for="cur1">Converting from: </label>
+    <input type="text" name="cur1"><br><br>
+    <label for="cur2">Converting to: </label>
+    <input type="text" name="cur2"><br><br>
+    <label for="amount">Amount: </label>
+    <input type="text" name="amount"><br><br>
+    <button>Convert</button>
+</form>
+
+<p>{{ total }}</p>
+<p>{{ result }}</p>
+
+{% endblock %}
